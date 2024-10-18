@@ -1,0 +1,21 @@
+.SvgToPath {
+    &__vectors {
+        display: flex;
+        gap:2rem;
+    }
+    &__invisible {
+        width:1000px;
+        height: 1400px;
+        position: fixed;
+        top:-99999px;
+        
+        svg {
+            fill: black;
+        }
+    }
+    &__path {
+        width:600px;
+        height:800px;
+        background-color: red;
+    }
+}
