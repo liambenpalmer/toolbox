@@ -176,8 +176,10 @@ function JsonEditor() {
             type="textarea"
             className="p-1 min-h-[100px] w-full block bg-white border border-gray-200 cursor-pointer rounded-lg disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700"
           />
+          <h2 class="text-2xl font-bold dark:text-white my-4">Stringify</h2>
+
           <input
-            className="p-1 h-10 w-100 block bg-white border border-gray-200 cursor-pointer rounded-lg disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700"
+            className="mb-4 p-1 h-10 w-full block bg-white border border-gray-200 cursor-pointer rounded-lg disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700"
             value={JSON.stringify(output)}
           />
         </div>
