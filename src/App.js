@@ -4,6 +4,8 @@ import SideNav from './components/navBar';
 import SvgToPath from './components/SvgToPath';
 import SvgToCSS from './components/SvgToCss';
 import ColourScheme from './components/colourScheme';
+import HexToPaint from './components/hexToPaintMix';
+import JsonEditor from './components/jsonEditor';
 
 function App() {
   const [showComponent, setShowComponent] = useState('svg-to-path')
@@ -17,6 +19,9 @@ function App() {
         {showComponent === 'svg-to-path' && <SvgToPath />}
         {showComponent === 'svg-to-css' && <SvgToCSS />}
         {showComponent === 'colour-scheme' && <ColourScheme />}
+        {showComponent === 'hex-to-paint' && <HexToPaint />}
+        {showComponent === 'json-editor' && <JsonEditor />}
+
       </div>
     </div>
       

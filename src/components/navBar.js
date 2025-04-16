@@ -4,7 +4,9 @@ export default function SideNav({showComponent, setShowComponent}) {
 const links = [
     {name: 'SVG to PATH', value: 'svg-to-path'},
     {name: 'SVG to CSS', value: 'svg-to-css'},
-    {name: 'Colour scheme', value: 'colour-scheme'}
+    {name: 'Colour scheme', value: 'colour-scheme'},
+    {name: 'Hex to paint', value: 'hex-to-paint'},
+    {name: 'JSON Editor', value: 'json-editor'}
 ]
   return (
     <div className="flex h-full flex-col px-3 py-4 md:px-2">
