@@ -8,7 +8,10 @@ function JsonEditor() {
   function createEditView(containerId) {
     const container = document.getElementById(containerId);
     container.innerHTML = '';
-    const jsonData = JSON.parse(input);
+    let jsonData = JSON.parse(input);
+    if (!Array.isArray(jsonData)) {
+      jsonData = JSON.parse(jsonData);
+    }
     const form = document.createElement('form');
 
     const fields = new Set();
